@@ -15,6 +15,6 @@ void pall_fun(stack_t **stack, unsigned int line_number)
 	while (used != NULL)
 	{
 		printf("%d\n", used->n);
-		ussed = used->next;
+		used = used->next;
 	}
 }

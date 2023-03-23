@@ -10,7 +10,7 @@ void push_fun(stack_t **stack, unsigned int line_number)
 	char *arg;
 	int value;
 
-	arg = tokn(NULL, " \n");
+	arg = strtok(NULL, " \n");
 	if (arg == NULL || !isdigit(*arg) && *arg != '-')
 	{
 		fprintf(stderr, "L%u: usage: push integer\n", line_number);
