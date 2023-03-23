@@ -38,6 +38,6 @@ typedef struct instruction_s
 
 void push_fun(stack_t **stk, unsigned int number);
 void pall_fun(stack_t **stk, unsigned int number);
-
+void pint(stack_t **stack, unsigned int line_number);
 
 #endif
