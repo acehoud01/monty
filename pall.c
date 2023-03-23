@@ -6,11 +6,11 @@
  * @line_number: line number where the pall instruction appears
  */
 
-void pall_fun(stack_t **stack, unsigned int line_number)
+void pall_fun(stack_t **stk, unsigned int starter)
 {
-	(void)line_number;
+	(void) starter;
 
-	stack_t *used = *stack;
+	stack_t *used = *stk;
 
 	while (used != NULL)
 	{

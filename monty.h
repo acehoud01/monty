@@ -1,8 +1,8 @@
 #ifndef MONTY_H
 #define MONTY_H
 
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
 
@@ -36,8 +36,8 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-void push_fun(stack_t **stack, unsigned int line_number);
-void pall_fun(stack_t **stack, unsigned int line_number);
+void push_fun(stack_t **stk, unsigned int number);
+void pall_fun(stack_t **stk, unsigned int number);
 
 
 #endif
