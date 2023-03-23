@@ -1,12 +1,20 @@
 #include "monty.h"
 
-void pall(stack_t **stack, unsigned int line_number)
+/**
+ * pall_fun - prints all the values on the stack
+ * @stack: pointer to the stack
+ * @line_number: line number where the pall instruction appears
+ */
+
+void pall_fun(stack_t **stack, unsigned int line_number)
 {
-    (void)line_number; //unused
-    stack_t *current = *stack;
-    while (current != NULL)
-    {
-        printf("%d\n", current->n);
-        current = current->next;
-    }
+	(void)line_number;
+
+	stack_t *used = *stack;
+
+	while (used != NULL)
+	{
+		printf("%d\n", used->n);
+		ussed = used->next;
+	}
 }
